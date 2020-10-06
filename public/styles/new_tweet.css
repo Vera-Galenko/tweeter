@@ -11,8 +11,14 @@
       border: none;
       cursor: pointer;
   }
-  .input_button :active {
+  .submit_button:hover {
+    /* background-color: #111c3d; */
+    box-shadow:10px 10px 0px rgb(218, 193, 241);
+  }
+  .submit_button:active {
     background-color: #111c3d;
+    /* color: rgb(218, 193, 241); */
+    box-shadow:10px 10px 0px rgb(218, 193, 241);
   }
  .counter {
      margin-top: 40px;
@@ -53,11 +59,11 @@
     font-weight: 800;
 
   }
- .text_header{
-    color: rgb(85, 84, 84);
-    font-weight: 600
- }
+
  
+ ::placeholder {
+  color:  rgb(85, 84, 84);
+ }
   
   .tweets-container{
       margin-top: 20px;
@@ -70,7 +76,13 @@
     box-shadow:10px 10px 0px rgb(218, 193, 241);
   }
  
+  .tweets-container:hover .short_name{
+    opacity: 1;
+  }
 
+  .tweets-container:hover .tweet_text{
+    font-weight: 600;
+  }
  
   img.img_profile {
     height: 60px;
@@ -94,6 +106,7 @@
   .short_name {
     margin-top: 10px;
     color: rgb(218, 193, 241);
+    opacity: 0;
     font-size: 26px;
     margin-left: 20px;
     font-weight: 300;
