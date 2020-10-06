@@ -3,13 +3,15 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
+    
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@300;600;700&display=swap" rel="stylesheet"> 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
+    <link rel="stylesheet" href="/styles/nav.css " type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css " type="text/css" />
+    <link rel="stylesheet" href="/styles/new_tweet.css " type="text/css" />
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -21,9 +23,91 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span>tweeter</span>
+      <div class="right">
+        <p class="nav_text"><span class="span_text">Write</span> a new tweet</p>
+        <img src="images/arrow.png" alt="" class="nav_img">
+      </div>
     </nav>
+    <header>
+  
+        <div>
+          <img src="/images/profile-hex.png"> 
+      </div>
+      <br>
+      <div>
+          <h2>  <span class="header_name">Your</span>  Name</h2>
+      </div>
+     
+  </header>
 
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main>
+      <div class="container">
+        <section class="new-tweet">
+          <form id="compose" action="/tweets/" method="POST">
+            <p class="text_header">"What are you humming about?"</p>
+            <textarea id="new-tweet-area" name="text"></textarea>
+            <span>
+              <input class="submit_button" type="submit" value="Tweet">
+              <span class="counter">140</span>
+            </span>
+          </form>
+        </section>
+  
+        <div class="tweets-container">
+          <article class="tweet">
+            <div class="name">
+              <div class="photo">
+                <img class="img_profile" src="/images/profile.png" alt="bird" />
+                <h1 class="full_name">Bill Fields</h1>
+              </div>
+              <h3 class="short_name">@MrFields</h3>
+            </div>
+            <div class="tweet-body">
+              <p>
+                little tweet here
+              </p>
+            </div>
+            <footer class="tweet_footer">
+              <p>
+              10 days ago
+              </p>
+              <span>
+                <i class="fa fa-flag" aria-hidden="true"></i>
+                <i class="fa fa-retweet" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </span>
+            </footer>
+          </article>
+        </div>
+        <div class="tweets-container">
+          <article class="tweet">
+            <div class="name">
+              <div class="photo">
+                <img class="img_profile" src="/images/profile.png" alt="bird" />
+                <h1 class="full_name">Bill Fields</h1>
+              </div>
+              <h2 class="short_name">@MrFields</h2>
+            </div>
+            <div class="tweet-body">
+              <p>
+                little tweet here
+              </p>
+            </div>
+            <footer class="tweet_footer">
+              <p>
+              10 days ago
+              </p>
+              <span>
+                <i class="fa fa-flag" aria-hidden="true"></i>
+                <i class="fa fa-retweet" aria-hidden="true"></i>
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </span>
+            </footer>
+          </article>
+        </div>
+      </div>
+      
+    </main>
   </body>
 </html>

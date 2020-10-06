@@ -1,0 +1,29 @@
+header {
+    margin-top: 110px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #e9be30;
+    background-image: url(../images/asfalt-dark.png);
+
+}
+header img{
+    margin-top: 40px;
+}
+
+h2 {
+ color: white;
+ font-weight: 400;
+}
+
+.header_name{
+ font-family: 'Source Sans Pro', sans-serif;
+ font-weight: 800;
+ margin-top: 10px;
+ font-size: 40px;
+
+
+}
