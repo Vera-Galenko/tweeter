@@ -6,13 +6,6 @@
 
 $(document).ready(function() {
 
-//  const dateConvert = function(sec) {
-//     const milliseconds = sec * 1000 
-//     const dateObject = new Date(milliseconds);
-//     const humanDateFormat = dateObject.toLocaleString();
-//     return humanDateFormat;
-//     }
-
 
 const theDate = function() {
 var today = new Date();
