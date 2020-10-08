@@ -19,12 +19,10 @@ main {
     min-width: 600px;
   }
   .submit_button:hover {
-    /* background-color: #111c3d; */
     box-shadow:10px 10px 0px rgb(218, 193, 241);
   }
   .submit_button:active {
     background-color: #111c3d;
-    /* color: rgb(218, 193, 241); */
     box-shadow:10px 10px 0px rgb(218, 193, 241);
   }
  .counter {
@@ -77,6 +75,7 @@ main {
       margin-top: 20px;
       border: solid 4px grey;
       max-height: 400px;
+      max-width: 700px;
       padding: 40px;
   }
   .tweet-error {
@@ -100,6 +99,9 @@ main {
 
   .tweets-container:hover .tweet_text{
     font-weight: 600;
+  }
+  .tweet_text{
+    word-wrap: break-word;
   }
  
   img.img_profile {
@@ -175,6 +177,9 @@ main {
     .counter {
       margin-top: 20px;
   }
+  .tweets-container {
+    max-width: 500px;
+  }
 
   }
 
@@ -199,6 +204,7 @@ main {
   }
   .tweets-container {
     max-height: 400px;
+    max-width: 700px;
   }
   ::placeholder {
     font-size: 18px;

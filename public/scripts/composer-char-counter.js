@@ -1,15 +1,16 @@
-$(document).ready(function() {
+$(document).ready(function() {           
   const characterCount = "#new-tweet-area";
   function updateCount(){
         var max = 140;
-        var len = $(this).val().length;
+        var len = $(this).val().length;    //counts symbols in textarea 
         $('.counter').text(max - len);
         if (len >= max) {
-          $('.counter').addClass('red');
+          $('.counter').addClass('red');   //counter becomes red if the number exceeds 140
+        } else {
+          $('.counter').removeClass('red');  //counter becomes grey if the number does not exceed 140
         } 
-      };
+      }
 
-    // $('.submit_button').on('click', () => addNewLine('#new-tweet-area', '.tweet_text'))
     $(characterCount).keyup(updateCount);
     $(characterCount).mouseup(updateCount);
     $(characterCount).mouseout(updateCount);

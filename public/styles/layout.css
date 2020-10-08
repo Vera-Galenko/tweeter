@@ -38,11 +38,7 @@ section.page {
   }
 }
 
-@media only screen and (max-width: 420px) {
-  section.page {
-    width: 100%;
-  }
-}
+
 
 
 
