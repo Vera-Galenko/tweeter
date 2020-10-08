@@ -54,7 +54,16 @@ h2 {
     header img{
         width: 220px;
     }
-  
-     
- 
 }
+@media only screen and (max-width: 420px) {
+    header {
+        margin-top: 110px;
+        width: 100%;
+        margin-left: 0px;
+        /* height: 360px; */
+    } 
+    header img{
+        width: 160px;
+    }
+
+  }
