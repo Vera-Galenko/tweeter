@@ -27,6 +27,17 @@ body {
   margin-right: auto;
 
 }
+section.page {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width:800px){
+  section.page {
+    flex-direction: column;
+  }
+}
+
 
 
 /*

@@ -14,6 +14,7 @@ var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds(
 var dateTime = date+' '+time;
 return dateTime;
 }
+
 const escape =  function(str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
@@ -21,7 +22,6 @@ const escape =  function(str) {
   }
 
 const createTweetElement = function(postObj) {
-    console.log("postObj: ", postObj);
     let $tweet  = ""
     $tweet  += `<div class="tweets-container">`
     $tweet  += `<article class="tweet">`;
@@ -75,6 +75,7 @@ const addingTweets = {
       });
     },
   };
+
   $("#compose").submit(addingTweets.successfulTweet);
 
 
@@ -90,14 +91,19 @@ const loadTweets = () => {
     });
 }
 
-   
-
-
-function renderTweets(tweetsArray) {
-    tweetsArray.forEach(tweetData => {
-        $("#tweets-container").prepend(createTweetElement(tweetData));
+ 
+function renderTweets(tweets) {
+    tweets.forEach(data => {
+        $("#tweets-container").prepend(createTweetElement(data));
     });
-}
+}  
+
+
+// function renderTweets(tweetsArray) {
+//     tweetsArray.forEach(tweetData => {
+//         $("#tweets-container").prepend(createTweetElement(tweetData));
+//     });
+// }
     
 });
 
