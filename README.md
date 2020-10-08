@@ -15,3 +15,13 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Images
+
+- Desktop version
+
+![Desktop version](https://github.com/Vera-Galenko/tweeter/blob/master/docs/Desktop_tweeter.png)
+
+- Tablet version
+
+![Tablet version](https://github.com/Vera-Galenko/tweeter/blob/master/docs/Tablet_tweeter.png)
